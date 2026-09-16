@@ -12,14 +12,14 @@
     <style>
         :root {
             color-scheme: dark;
-            --background: #111516;
+            --background: #122738;
             --surface: #191e20;
             --text: #f2f3ef;
             --muted: #b4bfbd;
             --line: #35403f;
-            --accent: #f5bc79;
-            --green: #b5d5ae;
-            --blue: #abcbdc;
+            --accent: #ffc600;
+            --green: #9ed092;
+            --blue: #9ac1d6;
         }
 
         * { box-sizing: border-box; }
@@ -106,9 +106,18 @@
             line-height: 1.08;
             letter-spacing: -0.05em;
             font-weight: 650;
+            text-align: left;
         }
 
-        h1 span { color: var(--accent); }
+        .hero-byline {
+            display: block;
+            margin-top: 0.15em;
+            color: var(--accent);
+            font-size: 0.8em;
+            line-height: 1.15;
+            text-align: left;
+        }
+
         .intro { max-width: 600px; color: var(--muted); font-size: 1.125rem; line-height: 1.75; }
         .projects { padding-bottom: 4.5rem; }
 
@@ -234,8 +243,8 @@
     <main class="wrap" id="main">
         <section class="hero" aria-labelledby="hero-title">
             <p class="eyebrow">Independent mod development</p>
-            <h1 id="hero-title">Minecraft mods<br><span>by Haxuslate.</span></h1>
-            <p class="intro">From the kitchen to the server. Home to A &amp; A Cooking and Server Xtils, with project wikis being built as development continues.</p>
+            <h1 id="hero-title">Minecraft mods <span class="hero-byline">by Haxuslate</span></h1>
+            <p class="intro">A &amp; A Cooking and Server Xtils are Minecraft mods developed by Haxuslate, with project wikis being built as development continues.</p>
         </section>
 
         <section class="projects" id="projects" aria-labelledby="projects-title">
@@ -248,7 +257,7 @@
                 <article class="project cooking" aria-labelledby="cooking-title">
                     <p class="project-category">01 / Cooking &amp; agriculture</p>
                     <h3 id="cooking-title">A &amp; A Cooking</h3>
-                    <p class="project-description">A deeper cooking ecosystem for Minecraft, built around ingredient preparation, cookware, kitchen stations, agriculture, and recipe discovery.</p>
+                    <p class="project-description">A Fabric mod that expands cooking and agriculture in Minecraft. It includes ingredient preparation, cookware, kitchen stations, crop systems, and recipe discovery. Currently in pre-alpha development.</p>
                     <ul class="details" aria-label="A and A Cooking project details">
                         <li>Pre-alpha</li>
                         <li>Fabric</li>
@@ -261,7 +270,7 @@
                 <article class="project server" aria-labelledby="server-title">
                     <p class="project-category">02 / Server utilities</p>
                     <h3 id="server-title">Server Xtils</h3>
-                    <p class="project-description">A modular utility framework for Minecraft servers, with a shared configuration system and a Smart Restarts module.</p>
+                    <p class="project-description">A modular server utility mod for Minecraft. The current implementation includes a shared configuration system and the Smart Restarts module.</p>
                     <ul class="details" aria-label="Server Xtils project details">
                         <li>In development</li>
                         <li>Fabric</li>
